@@ -1,0 +1,6 @@
+<resources>
+
+    <color name="normal_list_item_bg">#000000</color>
+    <color name="pressed_list_item_bg">#017890</color>
+    
+</resources>

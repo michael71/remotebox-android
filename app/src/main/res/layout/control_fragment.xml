@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bgBlack"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/ic_action_volume_on" />
+
+        <SeekBar
+            android:id="@+id/volumeBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    
+	<LinearLayout android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_gravity="center_horizontal"
+      style="@style/bgBlue">
+      
+	    <ImageButton
+	        android:id="@+id/playButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="?android:attr/borderlessButtonStyle"
+	        android:src="@drawable/av_play"
+	        />
+	
+	    <ImageButton
+	        android:id="@+id/pauseButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/playButton"
+	        style="?android:attr/borderlessButtonStyle"
+	        android:src="@drawable/av_pause"
+	        />
+	    <ImageButton
+	        android:id="@+id/stopButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/pauseButton"
+			style="?android:attr/borderlessButtonStyle"
+	        android:src="@drawable/av_stop"
+	        />
+	    
+	    <ImageButton
+	        android:id="@+id/previousButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/stopButton"
+	        style="?android:attr/borderlessButtonStyle"
+	        android:src="@drawable/av_previous"
+	        />
+	    
+		<ImageButton
+	        android:id="@+id/nextButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/previousButton"
+	        style="?android:attr/borderlessButtonStyle"
+	        android:src="@drawable/av_next"
+	        />
+		<ImageButton
+		    android:id="@+id/getButton"
+		    style="?android:attr/borderlessButtonStyle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignRight="@+id/stopButton"
+		    android:layout_marginRight="24dp"
+		    android:src="@drawable/av_download" />
+
+	</LinearLayout>
+	
+</LinearLayout>
